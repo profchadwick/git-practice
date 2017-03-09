@@ -37,6 +37,7 @@ git merge origin/B -m "Merging branch B into C"
 git cat-file commit HEAD # will show metadata about the commit and list the 2 parent commits
 
 echo "4) Merge a branch (part 2)"
+git checkout D
 git checkout E
 git rebase D
 git cat-file commit HEAD # will show metadata about the commit and will only list 1 parent commit
